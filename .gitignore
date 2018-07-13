@@ -1,2 +1,10 @@
-.sass-cache/
-*.css.map
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+Thumbs.db

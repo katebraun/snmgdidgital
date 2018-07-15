@@ -1,0 +1,68 @@
+.tele2 {
+  background-color: $backgrey;
+}
+
+.tele2__wrapper {
+  @include container;
+  min-height: 481px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 65px 383px 0 383px;
+}
+
+.tele2__title {
+  margin: 0;
+  font-family: $fdemi;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  align-self: center;
+  position: relative;
+
+
+  &--grey {
+    display: block;
+    color: $fontgrey;
+    text-decoration: none;
+  }
+
+  &:not(&--grey)::before {
+    position: absolute;
+    content: "";
+    top: 19px;
+    left: -211px;
+    width: 124px;
+    height: 124px;
+    background-image: url("../img/vector/mobile.svg");
+  }
+
+  &:not(&--grey)::after {
+    position: absolute;
+    content: "";
+    top: 53px;
+    left: -170px;
+    width: 43px;
+    height: 40px;
+    background-image: url("../img/raster/star.png");
+  }
+}
+
+.tele2__text {
+  margin-top: 5px;
+  padding-left: 30px;
+  font-family: $flight;
+  font-size: 16px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/raster/progress.png");
+  }
+}

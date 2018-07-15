@@ -1,0 +1,41 @@
+.guest {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 980px;
+    height: 49px;
+    background-image: url("../img/raster/output.png");
+    bottom: 4px;
+  }
+}
+
+.guest__list {
+  @include reset-list;
+  margin-top: -2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.guest__list-item {
+  width: 280px;
+}
+
+.guest__name {
+  font-family: $fbold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: -21px;
+}
+
+.guest__occupation {
+  font-family: $fbook;
+  font-size: 18px;
+  line-height: 20px;
+  color: #999999;
+  margin-bottom: -12px;
+}

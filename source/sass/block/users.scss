@@ -1,0 +1,33 @@
+.users {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: $fbold;
+  font-size: 120px;
+  line-height: 120px;
+  width: 250px;
+  text-align: center;
+
+  &__sup {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    font-size: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+
+  &__text {
+    font-family: $fbook;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 7px;
+  }
+}
+
+.users__number {
+  margin-left: 20px;
+}

@@ -1,0 +1,24 @@
+.growth {
+  position: absolute;
+  width: 160px;
+  height: 100px;
+  text-align: center;
+  top: 86px;
+  left: 103px;
+}
+
+.growth__number {
+  font-family: $fbold;
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: -3px;
+  vertical-align: middle;
+  line-height: 48px;
+}
+
+.growth__text {
+  font-family: $flight;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}

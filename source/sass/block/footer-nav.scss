@@ -1,0 +1,36 @@
+.footer-nav {
+  @include container;
+
+  box-sizing: border-box;
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+
+.footer-nav ul {
+  @include reset-list;
+  font-family: $flight;
+  font-size: 12px;
+}
+
+.footer-nav__title {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-nav__link {
+  color: white;
+  opacity: 0.4;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

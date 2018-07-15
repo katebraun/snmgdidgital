@@ -1,0 +1,81 @@
+.concept {
+  @include container;
+
+  box-sizing: border-box;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.concept__title {
+  font-family: $fbold;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.concept__letters {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.concept__letters-img {
+  margin-top: 30px;
+  margin-right: 36px;
+  min-width: 545px;
+  height: 292px;
+  background-image: url("../img/raster/feature-3.png");
+}
+
+.concept__letters-title {
+  font-family: $fbold;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 78px;
+  margin-bottom: -18px;
+}
+
+.concept__bottom {
+  display: flex;
+}
+
+.concept__games,
+.concept__contest {
+  display: flex;
+  flex-direction: column;
+}
+
+.concept__games-img,
+.concept__contest-img {
+  min-width: 410px;
+  height: 265px;
+  background-image: url("../img/raster/feature-1.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.concept__contest-img {
+  background-image: url("../img/raster/feature-2.png");
+}
+
+.concept__games {
+  margin-right: 20px;
+}
+
+.concept__contest {
+  padding-left: 30px;
+}
+
+.concept__games-title,
+.concept__contest-title {
+  font-family: $fbold;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 36px;
+  margin-bottom: -18px;
+}

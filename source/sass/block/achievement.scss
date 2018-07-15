@@ -1,0 +1,60 @@
+.achievements {
+  position: relative;
+  margin-bottom: 100px;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    bottom: 232px;
+  }
+}
+
+.achievements__title {
+  text-align: center;
+  font-family: $fbold;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.achievements__counters {
+  @include container;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 193px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 791px;
+    height: 203px;
+    background-image: url("../img/raster/border.png");
+    top: -110px;
+    left: -610px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 791px;
+    height: 203px;
+    background-image: url("../img/raster/border.png");
+    top: -110px;
+    right: -630px;
+  }
+}
+
+.achievements__text {
+  @include container;
+  box-sizing: border-box;
+  padding: 43px 240px 0 386px;
+}

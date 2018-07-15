@@ -1,0 +1,35 @@
+.table,
+tr,
+td {
+  border-collapse: collapse;
+}
+
+.table__col1 {
+  font-family: $flight;
+  font-size: 18px;
+  line-height: 25px;
+  vertical-align: top;
+  padding-bottom: 20px;
+  width: 230px;
+}
+
+.table__col2 {
+  font-family: $flight;
+  font-size: 18px;
+  line-height: 25px;
+  vertical-align: top;
+
+  p {
+    margin: 0;
+    margin-top: 25px;
+  }
+}
+
+.table__name {
+  display: block;
+  font-family: $fbold;
+}
+
+.table__col1--margin {
+  padding-top: 20px;
+}

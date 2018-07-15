@@ -1,0 +1,83 @@
+.billboard {
+  @include container;
+
+  position: relative;
+  box-sizing: border-box;
+  padding: 118px 156px 450px;
+}
+
+.billboard__banner {
+  position: relative;
+  box-shadow: 0 0 0 1px black, 0 0 0 3px white, 0 0 0 6px black;
+  min-height: 518px;
+  border-radius: 1px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 689px;
+    height: 70px;
+    background-image: url("../img/raster/lamps.png");
+    background-position: center;
+    top: -75px;
+    left: calc(50% - 344px);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 246px;
+    height: 501px;
+    background-image: url("../img/vector/pillar.svg");
+    background-position: center;
+    bottom: -506px;
+    left: calc(50% - 123px);
+  }
+}
+
+.billboard__offline {
+  position: absolute;
+  bottom: 152px;
+  left: 286px;
+}
+
+.billboard__online {
+  position: absolute;
+  bottom: 181px;
+  right: 255px;
+}
+
+.billboard__list {
+  @include reset-list;
+}
+
+.billboard__title {
+  font-family: $fbold;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.billboard__item {
+  font-size: 18px;
+  position: relative;
+  padding: 0 0 5px 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 1px;
+    background-color: $black;
+    top: 13px;
+    left: 0;
+  }
+
+  &--nomark {
+    padding-left: 0;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+}

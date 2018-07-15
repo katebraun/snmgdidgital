@@ -1,0 +1,61 @@
+.main-idea {
+  @include container;
+
+  box-sizing: border-box;
+  padding: 0 150px;
+  margin-bottom: 80px;
+}
+
+.main-idea__info {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.main-idea__title {
+  font-family: $fbold;
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.main-idea__p {
+  margin-bottom: 25px;
+}
+
+.main-idea__aim {
+  position: relative;
+  box-shadow: 0 0 0 1px black, 0 0 0 3px white, 0 0 0 6px black;
+  border-radius: 1px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-left: 85px;
+  min-width: 308px;
+  height: 407px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 435px;
+    height: 63px;
+    background-image: url("../img/vector/pillar-min.svg");
+    bottom: -68px;
+  }
+}
+
+.main-idea__aim-title {
+  font-family: $rbold;
+  font-size: 101px;
+  padding-top: 70px;
+}
+
+.main-idea__aim-text {
+  font-size: 24px;
+  text-align: center;
+  padding: 44px 20px;
+}

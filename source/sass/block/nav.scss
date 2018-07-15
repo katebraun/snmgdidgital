@@ -1,0 +1,37 @@
+.nav__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  margin-top: -11px;
+  margin-left: 52px;
+}
+
+.nav__list-item {
+  box-sizing: border-box;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  border-top: 5px solid transparent;
+
+  &--active,
+  &:hover,
+  &:focus {
+    border-top: 5px solid black;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.nav__link {
+  font-family: $flight;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $black;
+  text-decoration: none;
+}

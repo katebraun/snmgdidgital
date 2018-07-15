@@ -1,7 +1,22 @@
-button {
-  border: 1px solid black;
-  box-shadow: 0 0 0 3px white, 0 0 0 6px black;
-  border-radius: 1px;
-  width: 140px;
-  height: 50px;
+body {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: $fbook;
+  background-color: $white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  cursor: pointer;
 }

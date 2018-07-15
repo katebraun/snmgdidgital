@@ -1,0 +1,19 @@
+.output-data {
+  @include container;
+  padding: 0 150px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.output-data__diploma {
+  font-family: $flight;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+.output-data__text {
+  margin-top: -10px;
+}

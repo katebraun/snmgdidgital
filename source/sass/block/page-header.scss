@@ -1,0 +1,29 @@
+.page-header {
+  @include container;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 11px 50px 0 50px;
+  min-height: 52px;
+}
+
+.page-header__phone {
+  margin-top: 4px;
+}
+
+.page-header__tel {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

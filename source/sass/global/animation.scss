@@ -1,0 +1,25 @@
+@keyframes picflip {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.concept__letters-img,
+.concept__games-img,
+.concept__contest-img {
+  animation-name: picflip;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-delay: 0ms;
+}
+
+.concept__letters-img.stop,
+.concept__games-img.stop,
+.concept__contest-img.stop {
+  animation-name: none;
+}

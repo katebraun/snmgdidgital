@@ -1,0 +1,79 @@
+.slider {
+  background-color: $backgrey;
+}
+
+.slider__slides {
+  @include reset-list;
+  @include container;
+}
+
+.slider__slide {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  padding-left: 383px;
+  padding-right: 290px;
+  padding-top: 45px;
+  min-height: 470px;
+}
+
+.slider__title {
+  margin: 0;
+  font-family: $fdemi;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  align-self: center;
+  position: relative;
+
+
+  &--grey {
+    display: block;
+    color: $fontgrey;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: rgb(163, 40, 40);
+    }
+
+    &:active {
+      color: rgb(163, 40, 40);
+      opacity: 0.5;
+    }
+  }
+
+  &:not(&--grey)::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -253px;
+    width: 155px;
+    height: 120px;
+    background-image: url("../img/vector/laptop.svg");
+  }
+
+  &:not(&--grey)::after {
+    position: absolute;
+    content: "";
+    top: 53px;
+    left: -214px;
+    width: 43px;
+    height: 40px;
+    background-image: url("../img/raster/star.png");
+  }
+}
+
+.slider__next {
+  position: absolute;
+  top: 46.5%;
+  right: 44px;
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/vector/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,24 @@
+.kpi {
+  position: absolute;
+  width: 610px;
+  height: 240px;
+  text-align: center;
+  top: 168px;
+  right: calc(50% - 305px;);
+}
+
+.kpi__number {
+  font-family: $fbold;
+  font-size: 127px;
+  margin: 0;
+  margin-bottom: -3px;
+  vertical-align: middle;
+  line-height: 127px;
+}
+
+.kpi__text {
+  font-family: $flight;
+  font-size: 64px;
+  line-height: 58px;
+  margin: 0;
+}
